@@ -67,3 +67,10 @@ task runAdapter(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
     mainClass = 'com.github.vikthorvergara.designpatterns.structural.adapter.Main'
 }
+
+task runBridge(type: JavaExec) {
+    group = 'application'
+    description = 'Run Bridge pattern example'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.designpatterns.structural.bridge.Main'
+}
