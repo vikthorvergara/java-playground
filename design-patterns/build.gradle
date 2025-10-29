@@ -1,0 +1,69 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.github.vikthorvergara'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+test {
+    useJUnitPlatform()
+}
+
+// Task to run creational patterns
+task runBuilder(type: JavaExec) {
+    group = 'application'
+    description = 'Run Builder pattern example'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.designpatterns.creational.builder.Main'
+}
+
+task runPrototype(type: JavaExec) {
+    group = 'application'
+    description = 'Run Prototype pattern example'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.designpatterns.creational.prototype.Main'
+}
+
+task runSingleton(type: JavaExec) {
+    group = 'application'
+    description = 'Run Singleton pattern example'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.designpatterns.creational.singleton.Main'
+}
+
+task runFactoryMethod(type: JavaExec) {
+    group = 'application'
+    description = 'Run Factory Method pattern example'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.designpatterns.creational.factorymethod.Main'
+}
+
+task runAbstractFactory(type: JavaExec) {
+    group = 'application'
+    description = 'Run Abstract Factory pattern example'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.designpatterns.creational.abstractfactory.Main'
+}
+
+// Task to run structural patterns
+task runAdapter(type: JavaExec) {
+    group = 'application'
+    description = 'Run Adapter pattern example'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.designpatterns.structural.adapter.Main'
+}
