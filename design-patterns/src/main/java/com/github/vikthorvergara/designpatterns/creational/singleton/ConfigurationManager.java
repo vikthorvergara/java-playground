@@ -43,8 +43,6 @@ public class ConfigurationManager {
 
   public void displayAllConfigurations() {
     System.out.println("\n=== All Configurations ===");
-    configurations.forEach((key, value) ->
-      System.out.println(key + " = " + value)
-    );
+    configurations.forEach((key, value) -> System.out.println(key + " = " + value));
   }
 }
