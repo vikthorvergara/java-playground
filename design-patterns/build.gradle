@@ -89,3 +89,10 @@ task runComposite(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
     mainClass = 'com.github.vikthorvergara.designpatterns.structural.composite.Main'
 }
+
+task runDecorator(type: JavaExec) {
+    group = 'application'
+    description = 'Run Decorator pattern example'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.designpatterns.structural.decorator.Main'
+}
