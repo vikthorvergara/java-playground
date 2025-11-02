@@ -96,3 +96,10 @@ task runDecorator(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
     mainClass = 'com.github.vikthorvergara.designpatterns.structural.decorator.Main'
 }
+
+task runFacade(type: JavaExec) {
+    group = 'application'
+    description = 'Run Facade pattern example'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.designpatterns.structural.facade.Main'
+}
