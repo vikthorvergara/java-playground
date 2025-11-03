@@ -103,3 +103,10 @@ task runFacade(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
     mainClass = 'com.github.vikthorvergara.designpatterns.structural.facade.Main'
 }
+
+task runFlyweight(type: JavaExec) {
+    group = 'application'
+    description = 'Run Flyweight pattern example'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.designpatterns.structural.flyweight.Main'
+}
