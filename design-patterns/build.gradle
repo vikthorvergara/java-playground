@@ -110,3 +110,10 @@ task runFlyweight(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
     mainClass = 'com.github.vikthorvergara.designpatterns.structural.flyweight.Main'
 }
+
+task runProxy(type: JavaExec) {
+    group = 'application'
+    description = 'Run Proxy pattern example'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.designpatterns.structural.proxy.Main'
+}
