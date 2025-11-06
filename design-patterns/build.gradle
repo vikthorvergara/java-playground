@@ -125,3 +125,10 @@ task runChainOfResponsibility(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
     mainClass = 'com.github.vikthorvergara.designpatterns.behavioral.chainofresponsibility.Main'
 }
+
+task runCommand(type: JavaExec) {
+    group = 'application'
+    description = 'Run Command pattern example'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.designpatterns.behavioral.command.Main'
+}
