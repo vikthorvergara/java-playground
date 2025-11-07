@@ -132,3 +132,10 @@ task runCommand(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
     mainClass = 'com.github.vikthorvergara.designpatterns.behavioral.command.Main'
 }
+
+task runIterator(type: JavaExec) {
+    group = 'application'
+    description = 'Run Iterator pattern example'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.designpatterns.behavioral.iterator.Main'
+}
