@@ -139,3 +139,10 @@ task runIterator(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
     mainClass = 'com.github.vikthorvergara.designpatterns.behavioral.iterator.Main'
 }
+
+task runMediator(type: JavaExec) {
+    group = 'application'
+    description = 'Run Mediator pattern example'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.designpatterns.behavioral.mediator.Main'
+}
