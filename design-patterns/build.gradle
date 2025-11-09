@@ -146,3 +146,10 @@ task runMediator(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
     mainClass = 'com.github.vikthorvergara.designpatterns.behavioral.mediator.Main'
 }
+
+task runMemento(type: JavaExec) {
+    group = 'application'
+    description = 'Run Memento pattern example'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.designpatterns.behavioral.memento.Main'
+}
