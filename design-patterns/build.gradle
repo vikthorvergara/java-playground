@@ -153,3 +153,10 @@ task runMemento(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
     mainClass = 'com.github.vikthorvergara.designpatterns.behavioral.memento.Main'
 }
+
+task runObserver(type: JavaExec) {
+    group = 'application'
+    description = 'Run Observer pattern example'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.designpatterns.behavioral.observer.Main'
+}
