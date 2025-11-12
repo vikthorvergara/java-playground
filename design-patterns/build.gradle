@@ -160,3 +160,10 @@ task runObserver(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
     mainClass = 'com.github.vikthorvergara.designpatterns.behavioral.observer.Main'
 }
+
+task runState(type: JavaExec) {
+    group = 'application'
+    description = 'Run State pattern example'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.designpatterns.behavioral.state.Main'
+}
