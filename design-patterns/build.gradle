@@ -167,3 +167,10 @@ task runState(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
     mainClass = 'com.github.vikthorvergara.designpatterns.behavioral.state.Main'
 }
+
+task runStrategy(type: JavaExec) {
+    group = 'application'
+    description = 'Run Strategy pattern example'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.designpatterns.behavioral.strategy.Main'
+}
