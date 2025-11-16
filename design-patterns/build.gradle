@@ -174,3 +174,10 @@ task runStrategy(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
     mainClass = 'com.github.vikthorvergara.designpatterns.behavioral.strategy.Main'
 }
+
+task runTemplateMethod(type: JavaExec) {
+    group = 'application'
+    description = 'Run Template Method pattern example'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.designpatterns.behavioral.templatemethod.Main'
+}
