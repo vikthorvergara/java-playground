@@ -181,3 +181,10 @@ task runTemplateMethod(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
     mainClass = 'com.github.vikthorvergara.designpatterns.behavioral.templatemethod.Main'
 }
+
+task runVisitor(type: JavaExec) {
+    group = 'application'
+    description = 'Run Visitor pattern example'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.designpatterns.behavioral.visitor.Main'
+}
