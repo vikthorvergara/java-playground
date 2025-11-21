@@ -188,3 +188,10 @@ task runVisitor(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
     mainClass = 'com.github.vikthorvergara.designpatterns.behavioral.visitor.Main'
 }
+
+task runBasicAnnotations(type: JavaExec) {
+    group = 'junit5'
+    description = 'Run BasicAnnotationsPOC'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.junit5.BasicAnnotationsPOC'
+}
