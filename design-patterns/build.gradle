@@ -195,3 +195,10 @@ task runBasicAnnotations(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
     mainClass = 'com.github.vikthorvergara.junit5.BasicAnnotationsPOC'
 }
+
+task runAssertions(type: JavaExec) {
+    group = 'junit5'
+    description = 'Run AssertionsPOC'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.junit5.AssertionsPOC'
+}
