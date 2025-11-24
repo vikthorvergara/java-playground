@@ -202,3 +202,10 @@ task runAssertions(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
     mainClass = 'com.github.vikthorvergara.junit5.AssertionsPOC'
 }
+
+task runLifecycle(type: JavaExec) {
+    group = 'junit5'
+    description = 'Run LifecyclePOC'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.junit5.LifecyclePOC'
+}
