@@ -29,3 +29,9 @@ task runRobinHood(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
     mainClass = 'com.github.vikthorvergara.hashmap.robinhood.RobinHoodHashMap'
 }
+
+task runLRU(type: JavaExec) {
+    group = 'hash-map'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.hashmap.lru.LRUHashMap'
+}
