@@ -35,3 +35,9 @@ task runLRU(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
     mainClass = 'com.github.vikthorvergara.hashmap.lru.LRUHashMap'
 }
+
+task runCuckoo(type: JavaExec) {
+    group = 'hash-map'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.hashmap.cuckoo.CuckooHashMap'
+}
