@@ -22,6 +22,7 @@ java {
 
 test {
     useJUnitPlatform()
+    jvmArgs '--enable-native-access=ALL-UNNAMED'
 }
 
 task runRobinHood(type: JavaExec) {
@@ -46,4 +47,11 @@ task runSwissTable(type: JavaExec) {
     group = 'hash-map'
     classpath = sourceSets.main.runtimeClasspath
     mainClass = 'com.github.vikthorvergara.hashmap.swisstable.SwissTableHashMap'
+}
+
+task runOffHeap(type: JavaExec) {
+    group = 'hash-map'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.hashmap.offheap.OffHeapHashMap'
+    jvmArgs '--enable-native-access=ALL-UNNAMED'
 }
