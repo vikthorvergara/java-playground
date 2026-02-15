@@ -41,3 +41,9 @@ task runCuckoo(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
     mainClass = 'com.github.vikthorvergara.hashmap.cuckoo.CuckooHashMap'
 }
+
+task runSwissTable(type: JavaExec) {
+    group = 'hash-map'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.hashmap.swisstable.SwissTableHashMap'
+}
