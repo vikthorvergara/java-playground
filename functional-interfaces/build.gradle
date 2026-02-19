@@ -1,0 +1,58 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.github.vikthorvergara'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    sourceCompatibility = 25
+    targetCompatibility = 25
+}
+
+task runPredicate(type: JavaExec) {
+    group = 'functional-interfaces'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.functionalinterfaces.predicate.PredicatePOC'
+}
+
+task runFunction(type: JavaExec) {
+    group = 'functional-interfaces'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.functionalinterfaces.function.FunctionPOC'
+}
+
+task runConsumer(type: JavaExec) {
+    group = 'functional-interfaces'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.functionalinterfaces.consumer.ConsumerPOC'
+}
+
+task runSupplier(type: JavaExec) {
+    group = 'functional-interfaces'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.functionalinterfaces.supplier.SupplierPOC'
+}
+
+task runOperator(type: JavaExec) {
+    group = 'functional-interfaces'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.functionalinterfaces.operator.OperatorPOC'
+}
+
+task runCustom(type: JavaExec) {
+    group = 'functional-interfaces'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.functionalinterfaces.custom.CustomInterfacePOC'
+}
+
+task runDefaultMethods(type: JavaExec) {
+    group = 'functional-interfaces'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.functionalinterfaces.defaultmethods.DefaultMethodsPOC'
+}
