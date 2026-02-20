@@ -56,3 +56,9 @@ task runDefaultMethods(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
     mainClass = 'com.github.vikthorvergara.functionalinterfaces.defaultmethods.DefaultMethodsPOC'
 }
+
+task runMethodReferences(type: JavaExec) {
+    group = 'functional-interfaces'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.functionalinterfaces.methodreferences.MethodReferencesPOC'
+}
