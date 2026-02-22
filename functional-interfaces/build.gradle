@@ -68,3 +68,9 @@ task runComposition(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
     mainClass = 'com.github.vikthorvergara.functionalinterfaces.composition.CompositionPOC'
 }
+
+task runMemoization(type: JavaExec) {
+    group = 'functional-interfaces'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.functionalinterfaces.memoization.MemoizationPOC'
+}
