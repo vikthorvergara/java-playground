@@ -74,3 +74,9 @@ task runMemoization(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
     mainClass = 'com.github.vikthorvergara.functionalinterfaces.memoization.MemoizationPOC'
 }
+
+task runSpecification(type: JavaExec) {
+    group = 'functional-interfaces'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.functionalinterfaces.specification.SpecificationPOC'
+}
