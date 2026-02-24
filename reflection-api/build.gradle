@@ -1,0 +1,41 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.github.vikthorvergara'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_25
+    targetCompatibility = JavaVersion.VERSION_25
+}
+
+task runInspection(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.reflection.inspection.ClassInspectionPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runInvocation(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.reflection.invocation.MethodInvocationPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runModification(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.reflection.modification.FieldModificationPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runProxy(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.reflection.proxy.DynamicProxyPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runAnnotations(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.reflection.annotations.AnnotationProcessingPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
