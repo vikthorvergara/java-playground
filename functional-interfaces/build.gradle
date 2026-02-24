@@ -80,3 +80,9 @@ task runSpecification(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
     mainClass = 'com.github.vikthorvergara.functionalinterfaces.specification.SpecificationPOC'
 }
+
+task runLazyResult(type: JavaExec) {
+    group = 'functional-interfaces'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.github.vikthorvergara.functionalinterfaces.lazyresult.LazyResultPOC'
+}
