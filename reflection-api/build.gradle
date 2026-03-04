@@ -39,3 +39,18 @@ task runAnnotations(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.reflection.annotations.AnnotationProcessingPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runMapper(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.reflection.mapper.ObjectMapperPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runDI(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.reflection.di.DIContainerPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runDeepOps(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.reflection.deepops.DeepOperationsPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
