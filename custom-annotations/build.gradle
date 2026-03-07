@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.github.vikthorvergara'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_25
+    targetCompatibility = JavaVersion.VERSION_25
+}
+
+task runTesting(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.annotations.testing.MiniTestFrameworkPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runJson(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.annotations.json.JsonSerializerPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runRest(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.annotations.rest.RestScannerPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
