@@ -54,3 +54,23 @@ task runDeepOps(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.reflection.deepops.DeepOperationsPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runMethodHandles(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.reflection.methodhandles.MethodHandlesPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runGenericTypes(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.reflection.generictypes.GenericTypesPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runRecords(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.reflection.records.RecordIntrospectionPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runEventBus(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.reflection.eventbus.EventBusPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
