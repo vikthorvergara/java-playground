@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.github.vikthorvergara'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_25
+    targetCompatibility = JavaVersion.VERSION_25
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.compilerArgs += ['--enable-preview']
+}
+
+tasks.withType(JavaExec).configureEach {
+    jvmArgs += ['--enable-preview']
+}
+
+task runStructuredConcurrency(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.jdk.StructuredConcurrencyPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runScopedValues(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.jdk.ScopedValuesPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runStreamGatherers(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.jdk.StreamGatherersPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
