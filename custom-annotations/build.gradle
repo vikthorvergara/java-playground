@@ -29,3 +29,23 @@ task runRest(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.annotations.rest.RestScannerPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runOrm(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.annotations.orm.MiniOrmPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runValidation(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.annotations.validation.ValidationFrameworkPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runCli(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.annotations.cli.CliParserPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runRetry(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.annotations.retry.RetryMechanismPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
