@@ -37,3 +37,33 @@ task runStreamGatherers(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.jdk.StreamGatherersPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runConcurrencyLocksAtomics(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.jdk.ConcurrencyLocksAtomicsPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runReadWriteLock(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.jdk.ReadWriteLockPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runLockFreeStack(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.jdk.LockFreeStackPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runDateTimeBasics(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.jdk.DateTimeBasicsPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runDateTimeDuration(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.jdk.DateTimeDurationPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runDateTimeFormatter(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.jdk.DateTimeFormatterPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
