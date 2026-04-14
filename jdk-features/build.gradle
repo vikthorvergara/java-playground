@@ -67,3 +67,8 @@ task runDateTimeFormatter(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.jdk.DateTimeFormatterPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runStreams(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.jdk.basics.SimpleStreamsPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
