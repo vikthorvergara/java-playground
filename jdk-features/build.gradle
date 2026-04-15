@@ -72,3 +72,8 @@ task runStreams(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.jdk.basics.SimpleStreamsPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runStreamPredicates(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.jdk.basics.StreamPredicatesPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
