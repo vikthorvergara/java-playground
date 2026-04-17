@@ -82,3 +82,8 @@ task runStreamCollectors(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.jdk.basics.StreamCollectorsPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runStreamAdvanced(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.jdk.basics.StreamAdvancedPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
