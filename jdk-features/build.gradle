@@ -87,3 +87,8 @@ task runStreamAdvanced(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.jdk.basics.StreamAdvancedPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runProperties(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.jdk.basics.SimplePropertiesPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
