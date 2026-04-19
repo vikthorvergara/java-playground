@@ -92,3 +92,8 @@ task runProperties(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.jdk.basics.SimplePropertiesPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runVirtualThreads(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.jdk.basics.VirtualThreadsPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
