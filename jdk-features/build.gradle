@@ -97,3 +97,8 @@ task runVirtualThreads(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.jdk.basics.VirtualThreadsPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runPatternMatching(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.jdk.basics.PatternMatchingPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
