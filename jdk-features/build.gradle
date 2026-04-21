@@ -10,6 +10,10 @@ repositories {
     mavenCentral()
 }
 
+dependencies {
+    implementation 'joda-time:joda-time:2.12.7'
+}
+
 java {
     sourceCompatibility = JavaVersion.VERSION_25
     targetCompatibility = JavaVersion.VERSION_25
@@ -100,5 +104,10 @@ task runVirtualThreads(type: JavaExec) {
 
 task runPatternMatching(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.jdk.basics.PatternMatchingPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runJodaTime(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.jdk.basics.JodaTimePOC'
     classpath = sourceSets.main.runtimeClasspath
 }
