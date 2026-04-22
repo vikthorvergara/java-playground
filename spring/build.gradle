@@ -1,0 +1,79 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '4.0.0'
+    id 'io.spring.dependency-management' version '1.1.6'
+}
+
+group = 'com.github.vikthorvergara'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_25
+    targetCompatibility = JavaVersion.VERSION_25
+}
+
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-cache'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'com.github.ben-manes.caffeine:caffeine'
+    runtimeOnly 'com.h2database:h2'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.boot:spring-boot-starter-webflux'
+    testImplementation 'org.springframework.security:spring-security-test'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
+
+task runIoc(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.core.IocAndScopesPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runInjection(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.core.InjectionAndPostProcessorPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runValue(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.core.ValueAndEnvironmentPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runRest(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.web.RestSupportAndRestTemplatePOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runJdbcCache(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.data.JdbcAndCachePOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runJpaTx(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.tx.JpaTransactionPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runSecurity(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.security.SecurityPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}

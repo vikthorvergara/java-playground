@@ -1,0 +1,19 @@
+app:
+  name: spring-poc
+  version: 1.0
+  feature-flags: alpha,beta,gamma
+
+spring:
+  main:
+    banner-mode: off
+  cache:
+    type: caffeine
+    cache-names: products
+    caffeine:
+      spec: maximumSize=100,expireAfterWrite=10m
+
+logging:
+  level:
+    root: WARN
+    org.springframework: WARN
+    com.github.vikthorvergara: INFO
