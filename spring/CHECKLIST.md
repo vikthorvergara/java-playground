@@ -2,8 +2,8 @@
 
 - [x] Spring Core - IoC
 - [x] Spring Core - Bean Scopes (Singleton, Prototype)
-- [ ] Spring Core - Setter/Constructor Injection
-- [ ] Spring Core - Bean Post Processor
+- [x] Spring Core - Setter/Constructor Injection
+- [x] Spring Core - Bean Post Processor
 - [ ] Spring Core - @Value
 - [ ] Spring Core - Testing, Environment, WebTestClient
 - [ ] Spring Boot - Rest Support, RestTemplate
