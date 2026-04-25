@@ -4,8 +4,8 @@
 - [x] Spring Core - Bean Scopes (Singleton, Prototype)
 - [x] Spring Core - Setter/Constructor Injection
 - [x] Spring Core - Bean Post Processor
-- [ ] Spring Core - @Value
-- [ ] Spring Core - Testing, Environment, WebTestClient
+- [x] Spring Core - @Value
+- [x] Spring Core - Testing, Environment, WebTestClient
 - [ ] Spring Boot - Rest Support, RestTemplate
 - [ ] Spring Boot - Integration Test with Rest
 - [ ] Spring Data JDBC

@@ -54,7 +54,7 @@ task runInjection(type: JavaExec) {
 }
 
 task runValue(type: JavaExec) {
-    mainClass = 'com.github.vikthorvergara.spring.core.ValueAndEnvironmentPOC'
+    mainClass = 'com.github.vikthorvergara.spring.core.value.ValueAndEnvironmentPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
 
