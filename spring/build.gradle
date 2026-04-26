@@ -59,7 +59,7 @@ task runValue(type: JavaExec) {
 }
 
 task runRest(type: JavaExec) {
-    mainClass = 'com.github.vikthorvergara.spring.web.RestSupportAndRestTemplatePOC'
+    mainClass = 'com.github.vikthorvergara.spring.web.rest.RestSupportAndRestTemplatePOC'
     classpath = sourceSets.main.runtimeClasspath
 }
 
