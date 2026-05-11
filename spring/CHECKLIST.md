@@ -8,8 +8,8 @@
 - [x] Spring Core - Testing, Environment, WebTestClient
 - [x] Spring Boot - Rest Support, RestTemplate
 - [x] Spring Boot - Integration Test with Rest
-- [ ] Spring Data JDBC
-- [ ] Cache with Caffeine
+- [x] Spring Data JDBC
+- [x] Cache with Caffeine
 - [ ] Configure Transaction management with JPA
 - [ ] Spring Security: CSRF Protection
 - [ ] Spring Security: Authorize HTTP Requests (HttpSecurity and SecurityFilterChain)

@@ -64,7 +64,7 @@ task runRest(type: JavaExec) {
 }
 
 task runJdbcCache(type: JavaExec) {
-    mainClass = 'com.github.vikthorvergara.spring.data.JdbcAndCachePOC'
+    mainClass = 'com.github.vikthorvergara.spring.data.jdbccache.JdbcAndCachePOC'
     classpath = sourceSets.main.runtimeClasspath
 }
 
