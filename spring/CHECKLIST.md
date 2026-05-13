@@ -10,6 +10,6 @@
 - [x] Spring Boot - Integration Test with Rest
 - [x] Spring Data JDBC
 - [x] Cache with Caffeine
-- [ ] Configure Transaction management with JPA
+- [x] Configure Transaction management with JPA
 - [ ] Spring Security: CSRF Protection
 - [ ] Spring Security: Authorize HTTP Requests (HttpSecurity and SecurityFilterChain)

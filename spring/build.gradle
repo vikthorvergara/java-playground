@@ -69,7 +69,7 @@ task runJdbcCache(type: JavaExec) {
 }
 
 task runJpaTx(type: JavaExec) {
-    mainClass = 'com.github.vikthorvergara.spring.tx.JpaTransactionPOC'
+    mainClass = 'com.github.vikthorvergara.spring.tx.jpa.JpaTransactionPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
 
