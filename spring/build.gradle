@@ -74,6 +74,6 @@ task runJpaTx(type: JavaExec) {
 }
 
 task runSecurity(type: JavaExec) {
-    mainClass = 'com.github.vikthorvergara.spring.security.SecurityPOC'
+    mainClass = 'com.github.vikthorvergara.spring.security.csrf.SecurityPOC'
     classpath = sourceSets.main.runtimeClasspath
 }

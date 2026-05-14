@@ -11,5 +11,5 @@
 - [x] Spring Data JDBC
 - [x] Cache with Caffeine
 - [x] Configure Transaction management with JPA
-- [ ] Spring Security: CSRF Protection
-- [ ] Spring Security: Authorize HTTP Requests (HttpSecurity and SecurityFilterChain)
+- [x] Spring Security: CSRF Protection
+- [x] Spring Security: Authorize HTTP Requests (HttpSecurity and SecurityFilterChain)
