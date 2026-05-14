@@ -13,3 +13,12 @@
 - [x] Configure Transaction management with JPA
 - [x] Spring Security: CSRF Protection
 - [x] Spring Security: Authorize HTTP Requests (HttpSecurity and SecurityFilterChain)
+
+## Extended
+
+- [x] Spring AOP - @Aspect, @Around, @Pointcut
+
+- [ ] Validation + @ControllerAdvice (ProblemDetail)
+- [ ] @ConfigurationProperties + Profiles
+- [ ] Actuator + custom HealthIndicator + Micrometer
+- [ ] Events + @Async

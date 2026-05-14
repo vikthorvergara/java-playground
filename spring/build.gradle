@@ -31,6 +31,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-cache'
     implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-aspectj'
     implementation 'com.github.ben-manes.caffeine:caffeine'
     runtimeOnly 'com.h2database:h2'
 
@@ -75,5 +76,10 @@ task runJpaTx(type: JavaExec) {
 
 task runSecurity(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.security.csrf.SecurityPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runAop(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.aop.AopPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
