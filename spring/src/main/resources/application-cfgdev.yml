@@ -1,0 +1,7 @@
+mail:
+  host: smtp-dev.local
+  port: 2525
+  from: dev@local.test
+  retry:
+    attempts: 2
+    backoff-ms: 200

@@ -89,3 +89,8 @@ task runValidation(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.web.validation.ValidationPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runConfigProps(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.config.ConfigPropsPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}

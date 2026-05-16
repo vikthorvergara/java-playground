@@ -1,0 +1,7 @@
+mail:
+  host: smtp.corp.internal
+  port: 587
+  from: noreply@corp.internal
+  retry:
+    attempts: 5
+    backoff-ms: 1500
