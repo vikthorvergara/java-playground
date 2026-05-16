@@ -18,7 +18,7 @@
 
 - [x] Spring AOP - @Aspect, @Around, @Pointcut
 
-- [ ] Validation + @ControllerAdvice (ProblemDetail)
+- [x] Validation + @ControllerAdvice (ProblemDetail)
 - [ ] @ConfigurationProperties + Profiles
 - [ ] Actuator + custom HealthIndicator + Micrometer
 - [ ] Events + @Async
