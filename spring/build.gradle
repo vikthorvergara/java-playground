@@ -33,6 +33,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.springframework.boot:spring-boot-starter-aspectj'
     implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'com.github.ben-manes.caffeine:caffeine'
     runtimeOnly 'com.h2database:h2'
 
@@ -92,5 +93,10 @@ task runValidation(type: JavaExec) {
 
 task runConfigProps(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.config.ConfigPropsPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runActuator(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.actuator.ActuatorPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
