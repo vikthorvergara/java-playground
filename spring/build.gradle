@@ -34,6 +34,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-aspectj'
     implementation 'org.springframework.boot:spring-boot-starter-validation'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-resource-server'
     implementation 'com.github.ben-manes.caffeine:caffeine'
     runtimeOnly 'com.h2database:h2'
 
@@ -103,5 +104,10 @@ task runActuator(type: JavaExec) {
 
 task runEvents(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.events.EventsAsyncPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runOauthRs(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.security.oauth.OauthResourceServerPOC'
     classpath = sourceSets.main.runtimeClasspath
 }

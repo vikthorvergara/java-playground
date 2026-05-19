@@ -22,3 +22,13 @@
 - [x] @ConfigurationProperties + Profiles
 - [x] Actuator + custom HealthIndicator + Micrometer
 - [x] Events + @Async
+
+## Ladder
+
+- [x] Security: OAuth2 Resource Server plain JWT (200/401)
+- [ ] Security: @PreAuthorize / @PostAuthorize method security
+- [ ] Security: scope/role claim -> authorities, JwtAuthenticationConverter
+- [ ] Transactions: isolation + readOnly
+- [ ] Transactions: propagation NESTED / MANDATORY / SUPPORTS
+- [ ] Cache: @CacheEvict + @CachePut
+- [ ] Cache: Caffeine TTL/maxSize + condition / unless
