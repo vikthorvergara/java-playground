@@ -21,4 +21,4 @@
 - [x] Validation + @ControllerAdvice (ProblemDetail)
 - [x] @ConfigurationProperties + Profiles
 - [x] Actuator + custom HealthIndicator + Micrometer
-- [ ] Events + @Async
+- [x] Events + @Async

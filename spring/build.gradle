@@ -100,3 +100,8 @@ task runActuator(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.actuator.ActuatorPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runEvents(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.events.EventsAsyncPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
