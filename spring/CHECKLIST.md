@@ -26,7 +26,7 @@
 ## Ladder
 
 - [x] Security: OAuth2 Resource Server plain JWT (200/401)
-- [ ] Security: @PreAuthorize / @PostAuthorize method security
+- [x] Security: @PreAuthorize / @PostAuthorize method security
 - [ ] Security: scope/role claim -> authorities, JwtAuthenticationConverter
 - [ ] Transactions: isolation + readOnly
 - [ ] Transactions: propagation NESTED / MANDATORY / SUPPORTS

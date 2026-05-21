@@ -111,3 +111,8 @@ task runOauthRs(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.security.oauth.OauthResourceServerPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runMethodSecurity(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.security.method.MethodSecurityPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
