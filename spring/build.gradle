@@ -121,3 +121,8 @@ task runScopeAuthorities(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.security.scope.ScopeAuthoritiesPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runTxIsolation(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.tx.isolation.TxIsolationPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
