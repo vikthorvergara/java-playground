@@ -116,3 +116,8 @@ task runMethodSecurity(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.security.method.MethodSecurityPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runScopeAuthorities(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.security.scope.ScopeAuthoritiesPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
