@@ -29,6 +29,6 @@
 - [x] Security: @PreAuthorize / @PostAuthorize method security
 - [x] Security: scope/role claim -> authorities, JwtAuthenticationConverter
 - [x] Transactions: isolation + readOnly
-- [ ] Transactions: propagation NESTED / MANDATORY / SUPPORTS
+- [x] Transactions: propagation NESTED / MANDATORY / SUPPORTS
 - [ ] Cache: @CacheEvict + @CachePut
 - [ ] Cache: Caffeine TTL/maxSize + condition / unless

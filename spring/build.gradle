@@ -126,3 +126,8 @@ task runTxIsolation(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.tx.isolation.TxIsolationPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runTxPropagation(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.tx.propagation.TxPropagationPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
