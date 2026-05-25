@@ -30,5 +30,5 @@
 - [x] Security: scope/role claim -> authorities, JwtAuthenticationConverter
 - [x] Transactions: isolation + readOnly
 - [x] Transactions: propagation NESTED / MANDATORY / SUPPORTS
-- [ ] Cache: @CacheEvict + @CachePut
+- [x] Cache: @CacheEvict + @CachePut
 - [ ] Cache: Caffeine TTL/maxSize + condition / unless
