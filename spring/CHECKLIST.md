@@ -31,4 +31,4 @@
 - [x] Transactions: isolation + readOnly
 - [x] Transactions: propagation NESTED / MANDATORY / SUPPORTS
 - [x] Cache: @CacheEvict + @CachePut
-- [ ] Cache: Caffeine TTL/maxSize + condition / unless
+- [x] Cache: Caffeine TTL/maxSize + condition / unless

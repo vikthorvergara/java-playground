@@ -136,3 +136,8 @@ task runCacheEvictPut(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.data.cache.CacheEvictPutPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runCacheTuning(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.data.cache.CacheTuningPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
