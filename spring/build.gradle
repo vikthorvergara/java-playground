@@ -141,3 +141,8 @@ task runCacheTuning(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.data.cache.CacheTuningPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runAopAdvice(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.aop.advice.AdviceTypesPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}

@@ -32,3 +32,11 @@
 - [x] Transactions: propagation NESTED / MANDATORY / SUPPORTS
 - [x] Cache: @CacheEvict + @CachePut
 - [x] Cache: Caffeine TTL/maxSize + condition / unless
+- [x] AOP: @Before / @AfterReturning / @AfterThrowing
+- [ ] AOP: @Around retry + @Order aspects
+- [ ] Events: @TransactionalEventListener(AFTER_COMMIT)
+- [ ] Events: conditional @EventListener + ordering
+- [ ] Validation: custom ConstraintValidator
+- [ ] Validation: @GroupSequence + class-level cross-field
+- [ ] Data: derived queries + @Query JPQL
+- [ ] Data: Pageable / Sort + projections + @Modifying
