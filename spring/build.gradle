@@ -146,3 +146,8 @@ task runAopAdvice(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.aop.advice.AdviceTypesPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runAopAround(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.aop.around.AroundRetryPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
