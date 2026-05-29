@@ -35,7 +35,7 @@
 - [x] AOP: @Before / @AfterReturning / @AfterThrowing
 - [x] AOP: @Around retry + @Order aspects
 - [x] Events: @TransactionalEventListener(AFTER_COMMIT)
-- [ ] Events: conditional @EventListener + ordering
+- [x] Events: conditional @EventListener + ordering
 - [ ] Validation: custom ConstraintValidator
 - [ ] Validation: @GroupSequence + class-level cross-field
 - [ ] Data: derived queries + @Query JPQL

@@ -156,3 +156,8 @@ task runTxEvents(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.events.tx.TxEventsPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runEventsOrdering(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.events.ordering.EventsOrderingPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
