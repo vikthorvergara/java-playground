@@ -34,7 +34,7 @@
 - [x] Cache: Caffeine TTL/maxSize + condition / unless
 - [x] AOP: @Before / @AfterReturning / @AfterThrowing
 - [x] AOP: @Around retry + @Order aspects
-- [ ] Events: @TransactionalEventListener(AFTER_COMMIT)
+- [x] Events: @TransactionalEventListener(AFTER_COMMIT)
 - [ ] Events: conditional @EventListener + ordering
 - [ ] Validation: custom ConstraintValidator
 - [ ] Validation: @GroupSequence + class-level cross-field

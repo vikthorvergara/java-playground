@@ -151,3 +151,8 @@ task runAopAround(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.aop.around.AroundRetryPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runTxEvents(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.events.tx.TxEventsPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
