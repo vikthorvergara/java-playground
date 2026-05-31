@@ -161,3 +161,8 @@ task runEventsOrdering(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.events.ordering.EventsOrderingPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runCustomValidator(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.web.validation.custom.CustomValidatorPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
