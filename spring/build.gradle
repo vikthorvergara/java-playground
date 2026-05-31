@@ -166,3 +166,8 @@ task runCustomValidator(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.web.validation.custom.CustomValidatorPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runValidationGroups(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.web.validation.groups.ValidationGroupsPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}

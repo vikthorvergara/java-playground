@@ -37,6 +37,6 @@
 - [x] Events: @TransactionalEventListener(AFTER_COMMIT)
 - [x] Events: conditional @EventListener + ordering
 - [x] Validation: custom ConstraintValidator
-- [ ] Validation: @GroupSequence + class-level cross-field
+- [x] Validation: @GroupSequence + class-level cross-field
 - [ ] Data: derived queries + @Query JPQL
 - [ ] Data: Pageable / Sort + projections + @Modifying
