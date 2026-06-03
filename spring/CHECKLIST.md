@@ -39,4 +39,4 @@
 - [x] Validation: custom ConstraintValidator
 - [x] Validation: @GroupSequence + class-level cross-field
 - [x] Data: derived queries + @Query JPQL
-- [ ] Data: Pageable / Sort + projections + @Modifying
+- [x] Data: Pageable / Sort + projections + @Modifying
