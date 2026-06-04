@@ -181,3 +181,8 @@ task runJpaPaging(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.data.jpa.paging.JpaPagingPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runProblemHandlers(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.security.problem.ProblemHandlersPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
