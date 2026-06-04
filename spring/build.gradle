@@ -186,3 +186,8 @@ task runProblemHandlers(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.security.problem.ProblemHandlersPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runRollbackRules(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.tx.rollback.RollbackRulesPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}

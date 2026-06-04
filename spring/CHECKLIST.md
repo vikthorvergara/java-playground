@@ -41,3 +41,4 @@
 - [x] Data: derived queries + @Query JPQL
 - [x] Data: Pageable / Sort + projections + @Modifying
 - [x] Security: custom AuthenticationEntryPoint / AccessDeniedHandler -> ProblemDetail 401/403
+- [x] Transactions: rollbackFor / noRollbackFor exception rules
