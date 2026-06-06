@@ -196,3 +196,8 @@ task runAnnotationPointcut(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.aop.annotation.AnnotationPointcutPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runCacheSync(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.data.cache.sync.CacheSyncPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
