@@ -191,3 +191,8 @@ task runRollbackRules(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.tx.rollback.RollbackRulesPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runAnnotationPointcut(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.aop.annotation.AnnotationPointcutPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}

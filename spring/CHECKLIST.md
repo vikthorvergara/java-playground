@@ -42,3 +42,4 @@
 - [x] Data: Pageable / Sort + projections + @Modifying
 - [x] Security: custom AuthenticationEntryPoint / AccessDeniedHandler -> ProblemDetail 401/403
 - [x] Transactions: rollbackFor / noRollbackFor exception rules
+- [x] AOP: named @Pointcut reuse + custom-annotation @annotation() binding
