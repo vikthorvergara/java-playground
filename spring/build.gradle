@@ -201,3 +201,8 @@ task runCacheSync(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.data.cache.sync.CacheSyncPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runOptimisticLocking(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.data.jpa.locking.OptimisticLockingPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
