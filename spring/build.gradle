@@ -206,3 +206,8 @@ task runOptimisticLocking(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.data.jpa.locking.OptimisticLockingPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runAsyncListener(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.events.async.AsyncListenerPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
