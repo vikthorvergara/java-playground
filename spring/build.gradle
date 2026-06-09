@@ -211,3 +211,8 @@ task runAsyncListener(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.events.async.AsyncListenerPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runCollectionFiltering(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.security.filtering.CollectionFilteringPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
