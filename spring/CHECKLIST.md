@@ -48,3 +48,4 @@
 - [x] Events: @Async @EventListener on custom executor thread pool
 - [x] Security: @PreFilter / @PostFilter collection filtering by authentication
 - [x] Transactions: REQUIRES_NEW inner commit survives outer rollback
+- [x] AOP: self-invocation bypass + AopContext.currentProxy() fix
