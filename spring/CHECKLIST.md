@@ -47,3 +47,4 @@
 - [x] Data: optimistic locking @Version -> ObjectOptimisticLockingFailureException
 - [x] Events: @Async @EventListener on custom executor thread pool
 - [x] Security: @PreFilter / @PostFilter collection filtering by authentication
+- [x] Transactions: REQUIRES_NEW inner commit survives outer rollback

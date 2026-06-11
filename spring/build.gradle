@@ -216,3 +216,8 @@ task runCollectionFiltering(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.security.filtering.CollectionFilteringPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runRequiresNew(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.tx.requiresnew.RequiresNewPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
