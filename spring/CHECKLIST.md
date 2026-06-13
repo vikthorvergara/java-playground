@@ -49,3 +49,4 @@
 - [x] Security: @PreFilter / @PostFilter collection filtering by authentication
 - [x] Transactions: REQUIRES_NEW inner commit survives outer rollback
 - [x] AOP: self-invocation bypass + AopContext.currentProxy() fix
+- [x] Cache: custom KeyGenerator bean collapsing case-variant keys

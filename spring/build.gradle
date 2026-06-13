@@ -226,3 +226,8 @@ task runSelfInvocation(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.aop.selfinvocation.SelfInvocationPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runKeyGenerator(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.data.cache.keygen.KeyGeneratorPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
