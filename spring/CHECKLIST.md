@@ -50,3 +50,4 @@
 - [x] Transactions: REQUIRES_NEW inner commit survives outer rollback
 - [x] AOP: self-invocation bypass + AopContext.currentProxy() fix
 - [x] Cache: custom KeyGenerator bean collapsing case-variant keys
+- [x] Data: @EntityGraph fixing N+1 lazy fetch (4 statements -> 1)

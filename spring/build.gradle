@@ -231,3 +231,8 @@ task runKeyGenerator(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.data.cache.keygen.KeyGeneratorPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runEntityGraph(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.data.jpa.entitygraph.EntityGraphPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
