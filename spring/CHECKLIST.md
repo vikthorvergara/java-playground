@@ -51,3 +51,4 @@
 - [x] AOP: self-invocation bypass + AopContext.currentProxy() fix
 - [x] Cache: custom KeyGenerator bean collapsing case-variant keys
 - [x] Data: @EntityGraph fixing N+1 lazy fetch (4 statements -> 1)
+- [x] Events: listener non-void return republished as next event (chaining)

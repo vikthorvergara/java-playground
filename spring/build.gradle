@@ -236,3 +236,8 @@ task runEntityGraph(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.data.jpa.entitygraph.EntityGraphPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runEventChaining(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.events.chaining.EventChainingPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
