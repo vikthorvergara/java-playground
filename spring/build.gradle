@@ -246,3 +246,8 @@ task runRoleHierarchy(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.security.hierarchy.RoleHierarchyPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runTransactionTemplate(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.tx.programmatic.TransactionTemplatePOC'
+    classpath = sourceSets.main.runtimeClasspath
+}

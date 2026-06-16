@@ -53,3 +53,4 @@
 - [x] Data: @EntityGraph fixing N+1 lazy fetch (4 statements -> 1)
 - [x] Events: listener non-void return republished as next event (chaining)
 - [x] Security: RoleHierarchy ROLE_ADMIN > ROLE_USER in method security
+- [x] Transactions: programmatic TransactionTemplate execute + setRollbackOnly
