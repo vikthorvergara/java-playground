@@ -241,3 +241,8 @@ task runEventChaining(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.events.chaining.EventChainingPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runRoleHierarchy(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.security.hierarchy.RoleHierarchyPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
