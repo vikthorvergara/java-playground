@@ -251,3 +251,8 @@ task runTransactionTemplate(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.tx.programmatic.TransactionTemplatePOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runArgumentRewrite(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.aop.arguments.ArgumentRewritePOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
