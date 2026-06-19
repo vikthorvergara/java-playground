@@ -256,3 +256,8 @@ task runArgumentRewrite(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.aop.arguments.ArgumentRewritePOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runEvictBeforeInvocation(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.data.cache.evictbefore.EvictBeforeInvocationPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}

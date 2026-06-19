@@ -55,3 +55,4 @@
 - [x] Security: RoleHierarchy ROLE_ADMIN > ROLE_USER in method security
 - [x] Transactions: programmatic TransactionTemplate execute + setRollbackOnly
 - [x] AOP: @Around rewriting arguments before proceed
+- [x] Cache: @CacheEvict(beforeInvocation=true) evicts despite exception
