@@ -266,3 +266,8 @@ task runAuditing(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.data.jpa.auditing.AuditingPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runAfterRollbackListener(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.events.rollback.AfterRollbackListenerPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}

@@ -57,3 +57,4 @@
 - [x] AOP: @Around rewriting arguments before proceed
 - [x] Cache: @CacheEvict(beforeInvocation=true) evicts despite exception
 - [x] Data: JPA auditing @CreatedDate / @LastModifiedDate
+- [x] Events: @TransactionalEventListener(AFTER_ROLLBACK) phase
