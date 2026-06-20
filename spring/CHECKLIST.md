@@ -56,3 +56,4 @@
 - [x] Transactions: programmatic TransactionTemplate execute + setRollbackOnly
 - [x] AOP: @Around rewriting arguments before proceed
 - [x] Cache: @CacheEvict(beforeInvocation=true) evicts despite exception
+- [x] Data: JPA auditing @CreatedDate / @LastModifiedDate

@@ -261,3 +261,8 @@ task runEvictBeforeInvocation(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.data.cache.evictbefore.EvictBeforeInvocationPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runAuditing(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.data.jpa.auditing.AuditingPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
