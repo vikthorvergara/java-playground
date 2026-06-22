@@ -271,3 +271,8 @@ task runAfterRollbackListener(type: JavaExec) {
     mainClass = 'com.github.vikthorvergara.spring.events.rollback.AfterRollbackListenerPOC'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+task runPermissionEvaluator(type: JavaExec) {
+    mainClass = 'com.github.vikthorvergara.spring.security.permission.PermissionEvaluatorPOC'
+    classpath = sourceSets.main.runtimeClasspath
+}
